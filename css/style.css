@@ -171,7 +171,12 @@ main{
     padding: 10px 24px;
     color: white;
     font-weight: 700;
+    transition: calc(1s);
+    border-radius: 5px;
 
+}
+.feature-details a:hover{
+    background-color: purple;
 }
 .feature-details h1{
     font-size: 38px;
@@ -212,4 +217,78 @@ footer p{
 footer .fa-brands{
     padding-top: 10px;
     padding-right: 10px;
+}
+
+/* Responsive web design */
+@media screen and (max-width:767px) {
+    nav{
+        display: block;
+        margin-left: 0;
+        justify-content: center;
+        width: 100%;
+        margin-top: 0;
+        /* text-align: center; */
+    }
+    .nav-links{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+    }   
+    
+    .home-menu{
+        display:flex;
+        justify-content:center ;
+
+        
+    }
+    .home-menu img{
+        display: none;
+    }
+    main{
+        margin-left: 20px;
+        width: 100%;
+    }
+   .popular-collection{
+        margin-left: 0;
+   }
+    .collection-images{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    
+    }
+    .logo{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .logo-icons{
+        margin-left: 0;
+        width: 100%;
+      
+    }
+    .feature-product{
+        display:flex;
+        justify-content: center;
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+        
+    }
+    .feature-details{
+        display: none;
+    }
+    .feature-image{
+        display: flex;
+        justify-content: center;
+        margin-left: 4px;
+    }
+    .feature-image img{
+        width: 85%;
+        margin-left: 0;
+
+        
+    }
+    footer{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
 }
