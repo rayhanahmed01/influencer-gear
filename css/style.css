@@ -11,7 +11,7 @@ nav{
     justify-content: space-between;
     margin: 40px 120px ;
     padding: 20px 50px;
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     
 }
 .nav-links a{
@@ -27,37 +27,58 @@ nav{
 /* .home-menu p{
     width: 200px ;
 } */
+main{
+    margin: 0px 165px;
+}
 .home-menu{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 146px;
-    margin-left: 120px;
+    /* margin-left: 120px; */
     
 }
 .home-menu h1{
     font-size: 52px;
     font-weight: 700;
 }
-.home-menu a{
+.home-menu p{
+    margin-bottom: 30px;
+}
+.pree-book a{
+    transition: calc(.5s);
     text-decoration: none;
     color: white ;
     padding: 10px 40px;
     border-radius: 41px;
     background-color: #E02C6D;
-    margin-top: 40px;
+    font-weight: 800;
+    
+
+}
+.pree-book a:hover{
+    background-color: purple;
+    font-weight: 800;
 }
 .home-menu i.fa-solid{
     margin-left: 10px;
 }
-.home-menu img.main-camera{
+.home-menu .main-camera{
     width: 440px;
     height: 414px;
-    margin-top: px;
     margin-left: 220px;
+    position: relative;
+    margin-top: -470px;
+    margin-bottom: 50px;
+    transition: transform 1s;
 }
-.home-menu img.camera-bg{
+.main-camera:hover{
+    transform: scale(1.2);
+}
+.home-menu .camera-bg{
     width: 475;
     height: 475;
+    margin-left: 190px;
+    margin-top: -80px;
 }
 .logo-icons{
     justify-items: center;
@@ -71,19 +92,24 @@ nav{
 
 }
 .popular-collection{
-    margin: 0px 120px;
+    margin: 10px 30px;
     justify-content: center;
-    justify-items: center;
-    align-items: center;
+    
 }
 .popular-collection h1{
     text-align: center;
 }
-.popular-collection a{
+.see-more {
+    text-align: right;
+
+}
+.popular-collection .see-more a{
     text-decoration:none;
     color: #E02C6D;
     font-weight: 700;
-    margin-left: 1082px;
+    
+    
+
     
 }
 .collections{
@@ -92,6 +118,7 @@ nav{
     background-color: #FFFFFF;
     margin-top: 30px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);  
+    padding: 10px;
 }
 .collection-images{
     display: grid;
@@ -133,15 +160,56 @@ nav{
     margin-top: 0;
     color: #FB8200;
 }
+.feature-product{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 140px;
+}
+.feature-details a{
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    color: white;
+    font-weight: 700;
+
+}
+.feature-details h1{
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+.feature-details p{
+    margin-bottom: 28px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.feature-product .feature-details{
+    width: 610px;
+    margin-left: 96px;
+}
 footer{
     color: white;
     text-align: center;
-    bottom:0;
-    /* position: absolute; */
     width: 100%;
     margin-bottom: 0;
-    height: 239px;
     background: #0A0826;
     align-items: center;
     justify-content: center;
+}
+footer h3{
+    font-size: 24px;
+    
+}
+footer p{
+    font-family:'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+}
+.foot-detail{
+    padding: 40px;
+}
+footer .fa-brands{
+    padding-top: 10px;
+    padding-right: 10px;
 }
